@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "c/mainPage": [
+                "mainPage/mainPage.js"
+            ],
+            "c/propertiesList": [
+                "propertiesList/propertiesList.js"
+            ],
+            "c/propertyDetails": [
+                "propertyDetails/propertyDetails.js"
+            ],
+            "c/propertyFilter": [
+                "propertyFilter/propertyFilter.js"
+            ],
+            "c/propertyFinder": [
+                "propertyFinder/propertyFinder.js"
+            ],
+            "c/propertyFinderMap": [
+                "propertyFinderMap/propertyFinderMap.js"
+            ],
+            "c/propertyMap": [
+                "propertyMap/propertyMap.js"
+            ],
+            "c/propertyMarkers": [
+                "propertyMarkers/propertyMarkers.js"
+            ],
+            "c/propertyTile": [
+                "propertyTile/propertyTile.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ]
+        },
+        "experimentalDecorators": true
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

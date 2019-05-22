@@ -1,0 +1,33 @@
+<template>
+    <template if:true={recordId}>
+      <div style="width:310px">
+       <lightning-card icon-name="custom:custom85" title={name} >
+          <div class="slds-grid slds-wrap" style="padding-left: 15px;">
+               <div class="slds-col slds-size_12-of-12">
+                    <img src={mainThumb} />
+               </div>
+              <!-- <div class="slds-col slds-size_6-of-12">
+                  <lightning-input label="Beds" type="text" value={beds} style="width:50%"></lightning-input>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-input label="Baths" type="text" value={bath} style="width:50%"></lightning-input>
+                </div>-->
+                
+           </div>
+           <div  style="padding-left: 15px;">
+            <lightning-record-form
+                   record-id={recordId}
+                   object-api-name="mahesh_space__Property__c"
+                   layout-type="Compact"
+                   fields={selected_fields}
+                   columns="2"
+                   mode="view">
+              </lightning-record-form>
+              </div>
+       
+       </lightning-card>
+      </div><br/>
+
+    </template>
+
+</template>

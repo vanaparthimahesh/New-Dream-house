@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Filters" icon-name="standard:calibration" style="width: fit-content;
+    height: 287px;">
+        <div style="padding-left: 6px;padding-right: 7px;">
+        <div onkeyup={handleSearchKeyChange}>
+            <lightning-input
+                name="enter-search"
+                label="Search key"
+                type="search"
+                value={sarchvalue}
+            ></lightning-input>
+        </div>
+        <lightning-slider label="Max price" max="1200000" value={maxPrice} onchange={handleMaxPriceChange}></lightning-slider>
+        <lightning-slider label="Bedrooms"  max="6" value={bedrooms} onchange={handleMinBedroomsChange}></lightning-slider>
+        <lightning-slider label="Bathrooms" max="6" value={bathrooms}  onchange={handleMinBathroomsChange}></lightning-slider>
+        </div>
+    </lightning-card>
+</template>

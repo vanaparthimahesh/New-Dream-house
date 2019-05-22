@@ -1,0 +1,9 @@
+<template>
+   
+   <template for:each={allProperties} for:item="property">
+    <c-property-markers key={property.Id} property={property} onmarker={handleMarker}></c-property-markers>
+    </template>
+    <lightning-map 
+        map-markers={mapMarkers}
+    ></lightning-map>
+</template>

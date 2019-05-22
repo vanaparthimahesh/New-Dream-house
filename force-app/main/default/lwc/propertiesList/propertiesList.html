@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <div class="slds-m-around_medium" onchildevent={handleselectedchild}>
+        <template if:true={allProperties.data}>
+            <lightning-layout multiple-rows>
+                 <template for:each={allProperties.data} for:item="singleProperty">
+                     <lightning-layout-item key={singleProperty.Id} size="12" small-device-size="6" medium-device-size="4" large-device-size="3" padding="around-small">
+                        <c-property-tile key={singleProperty.Id} perporty={singleProperty} >
+                        </c-property-tile>
+                     </lightning-layout-item>
+                 </template>
+          </lightning-layout>  
+          </template>
+          <template if:true={allProperties.error}>
+             <p>Data Error</p>
+          </template>
+        </div>
+    </lightning-card>
+</template>
